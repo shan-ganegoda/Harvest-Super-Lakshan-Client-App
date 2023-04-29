@@ -22,7 +22,6 @@ import {MatExpansionModule} from "@angular/material/expansion";
 import {MatIconModule} from "@angular/material/icon";
 import {MessageComponent} from "./util/dialog/message/message.component";
 import {MatDialogModule} from "@angular/material/dialog";
-import {CourseComponent} from "./view/modules/course/course.component";
 
 
 @NgModule({
@@ -33,8 +32,7 @@ import {CourseComponent} from "./view/modules/course/course.component";
     MainwindowComponent,
     EmployeeComponent,
     UserComponent,
-    MessageComponent,
-    CourseComponent
+    MessageComponent
   ],
   imports: [
     BrowserModule,
