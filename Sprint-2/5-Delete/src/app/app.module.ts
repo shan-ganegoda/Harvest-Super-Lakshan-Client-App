@@ -22,6 +22,7 @@ import {MatExpansionModule} from "@angular/material/expansion";
 import {MatIconModule} from "@angular/material/icon";
 import {MessageComponent} from "./util/dialog/message/message.component";
 import {MatDialogModule} from "@angular/material/dialog";
+import {MatTableModule} from "@angular/material/table";
 
 
 @NgModule({
@@ -34,23 +35,24 @@ import {MatDialogModule} from "@angular/material/dialog";
     UserComponent,
     MessageComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MatGridListModule,
-    MatCardModule,
-    ReactiveFormsModule,
-    MatFormFieldModule,
-    MatButtonModule,
-    MatInputModule,
-    MatToolbarModule,
-    MatSidenavModule,
-    MatListModule,
-    MatExpansionModule,
-    MatIconModule,
-    MatDialogModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        MatGridListModule,
+        MatCardModule,
+        ReactiveFormsModule,
+        MatFormFieldModule,
+        MatButtonModule,
+        MatInputModule,
+        MatToolbarModule,
+        MatSidenavModule,
+        MatListModule,
+        MatExpansionModule,
+        MatIconModule,
+        MatDialogModule,
+        MatTableModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

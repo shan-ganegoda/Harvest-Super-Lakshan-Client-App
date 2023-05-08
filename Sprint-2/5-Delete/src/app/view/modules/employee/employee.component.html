@@ -21,6 +21,36 @@
       <mat-card-header>
         <mat-card-title>Employee Table</mat-card-title>
       </mat-card-header>
+      <mat-card-content>
+
+        <mat-table [dataSource]="employees">
+
+          <ng-container matColumnDef="number">
+            <mat-header-cell *matHeaderCellDef> Number </mat-header-cell>
+            <mat-cell *matCellDef="let employee">{{employee.number}}</mat-cell>
+          </ng-container>
+
+          <ng-container matColumnDef="callingname">
+            <mat-header-cell *matHeaderCellDef> Calling Name </mat-header-cell>
+            <mat-cell *matCellDef="let employee">{{employee.callingname}}</mat-cell>
+          </ng-container>
+
+          <ng-container matColumnDef="gender">
+            <mat-header-cell *matHeaderCellDef> Gender </mat-header-cell>
+            <mat-cell *matCellDef="let employee">{{employee.gender.name}}</mat-cell>
+          </ng-container>
+
+          <ng-container matColumnDef="designation">
+            <mat-header-cell *matHeaderCellDef> Designation </mat-header-cell>
+            <mat-cell *matCellDef="let employee">{{employee.designation.name}}</mat-cell>
+          </ng-container>
+
+          <mat-header-row id="th" *matHeaderRowDef="columns"></mat-header-row>
+          <mat-row *matRowDef="let row; columns: columns;"></mat-row>
+
+        </mat-table>
+
+      </mat-card-content>
     </mat-card>
   </mat-grid-tile>
 

@@ -84,7 +84,7 @@ mat-nav-list mat-list-item {
   height: 35px;
   font-size: 14px;
   padding: 0px 5px 0px 10px;
-  border-bottom: #8aa88a 2px solid;
+  /*border-bottom: #8aa88a 2px solid;*/
 }
 
 mat-nav-list mat-list-item:hover {
